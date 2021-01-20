@@ -1,0 +1,64 @@
+{{ $thisPost := .RelPermalink }}
+{{ $comments := .Site.Data.comments }}
+{{ $.Scratch.Set "counter" 0 }}
+{{ range $comments }}
+    {{ range . }}{{ if eq .path $thisPost }}{{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}{{ end }}{{ end }}
+{{ end }}
+{{ if gt ($.Scratch.Get "counter") 0 }}{{/*  only show comment section if there are comments  */}}
+    {{ range $comments }}
+        {{ range . }}
+            {{ if eq .path $thisPost }}
+                    <article class="uk-comment uk-comment-primary uk-margin-small-top">
+                        <header class="uk-comment-header">
+                            <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                                        <li>
+                                            {{ if eq .rating "5" }}
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15" class="mr-3">
+                                            {{ else if eq .rating "4" }}
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                                            {{ else if eq .rating "3" }}
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                                            {{ else if eq .rating "2" }}
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                                            {{ else if eq .rating "1" }}
+                                            <img src="/assets/stars-filled.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15">
+                                            <img src="/assets/stars-empty.svg" alt="" width="15" class="mr-3">
+                                            {{ end }}
+                                        </li>
+                                        <li>
+                                            <h4 class="uk-margin-remove uk-text-capitalize">{{ .heading }}</h4>
+                                        </li>
+                                    </ul>
+                                    <h6 class="uk-margin-remove">By {{ .name }} <small>on {{ .date | dateFormat "Jan. 02, 2006" }}</small></h6>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="uk-comment-body">
+                            <p>{{ .review }}</p>
+                        </div>
+                    </article>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}

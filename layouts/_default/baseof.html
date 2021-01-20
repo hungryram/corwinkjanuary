@@ -1,0 +1,16 @@
+{{ partial "global/head" . }}
+{{ partial "global/navbar" . }}
+<div class="uk-section-small">
+    <div class="uk-container uk-container-large">
+        {{ if .Params.sku  }}
+        {{ else }}
+        <h1 class="uk-heading-line-dot uk-text-center uk-text-bold"><span>{{ .Title }}</span></h1>
+        {{ end }}
+    </div>
+</div>
+<main>
+{{ block "main" . }}
+
+{{ end }}
+</main>
+{{ partial "global/footer" . }}

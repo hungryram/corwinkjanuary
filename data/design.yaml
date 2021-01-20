@@ -1,0 +1,87 @@
+---
+logo_and_title:
+  logo: https://res.cloudinary.com/hungryram19/image/upload/v1609121733/corinne-renteria/corwinkcosmetics/corwinklogo_aulh2x.png
+  company_title: Corwink
+  favicon: https://res.cloudinary.com/hungryram19/image/upload/v1609126473/corinne-renteria/corwinkcosmetics/favicon_glluyh.png
+home_slideshow:
+  slideshow:
+    - https://res.cloudinary.com/hungryram19/image/upload/v1609126434/corinne-renteria/corwinkcosmetics/background9_dzbt1e.jpg
+  slideshow_title: "**Luxury** at an Affordable Price"
+  slideshow_subtitle: Luxury Lashes by Corwink
+  image: https://res.cloudinary.com/hungryram19/image/upload/v1611162230/corinne-renteria/corwinkcosmetics/purplebanner_i1u7eh.jpg
+  hero_subtitle: CorWink Cosmetics
+  hero_title: |-
+    ## 20% OFF
+    ## Magic Liner
+    ## Pens
+  button_text: Shop Now
+  button_link: https://www.corwinkcosmetics.com/eyeliners/magic-liners/
+  body: |-
+    **NO CODE NEEDED**
+    Discount Available
+    From 1/14-1/25
+colors:
+  enable_black_menu_items: true
+  header_background_color: "#FFFFFF"
+  page_background: "#F6F6F6"
+footer:
+  footer_background_color: "#000000"
+  enable_black_text: false
+  footer_logo: https://res.cloudinary.com/hungryram19/image/upload/v1609121733/corinne-renteria/corwinkcosmetics/corwinklogo_aulh2x.png
+  footer_bio:
+    Our mission is to keep the highest quality of luxury lashes you love
+    at an affordable price while providing unique options that fit your lash needs.
+banner:
+  banner_image: "/uploads/banner4.jpg"
+home_section_text:
+  home_inrto_section:
+    subtitle: Welcome
+    heading: Our Mission
+    body_text:
+      Our mission is to keep the highest quality of luxury lashes you love
+      at an affordable price while providing unique options that fit your lash needs.
+  second_intro:
+    subtitle: ""
+    heading: Why CorWink Cosmetics?
+    body_text: |-
+      * 100% Affordable Handmade Luxury Lashes
+      * 100% Cruelty-Free
+      * 100% Real Siberian Mink Options
+      * 100% Vegan-Faux Mink Options
+      * Unique Applications Available
+      * Soft Band & Very Light Weight
+  blog:
+    subtitle: Learn More About Your Favorite Lashes
+    heading: Latest News
+    body_text: ""
+home_layout:
+  featured:
+    featured_one:
+      heading: Magnetic Lashes
+      link: "/lash-types/magnetic-lashes/"
+      image: https://res.cloudinary.com/hungryram19/image/upload/v1609999711/corinne-renteria/corwinkcosmetics/virtue-lash_opt_uuv0rx.png
+    featured_two:
+      link: "/lash-types/strip-lashes/"
+      heading: Strip Lashes
+      image: https://res.cloudinary.com/hungryram19/image/upload/v1609121749/corinne-renteria/corwinkcosmetics/unique-1_tkd8nf.jpg
+    featured_three:
+      heading: Magic Liners
+      link: "/eyeliners/magic-liners/"
+      image: https://res.cloudinary.com/hungryram19/image/upload/v1609121747/corinne-renteria/corwinkcosmetics/purple-pen-1_wuykuk.jpg
+    featured_four:
+      heading: UV Neon Pastel Liners
+      link: "/eyeliners/uv-neon-pastel-liners/"
+      image: https://res.cloudinary.com/hungryram19/image/upload/v1609121731/corinne-renteria/corwinkcosmetics/group-7_pn74id.jpg
+  introduction:
+    body:
+      Our mission is to keep the highest quality of luxury lashes you love at
+      an affordable price while providing unique options that fit your lash needs.
+  banner:
+    heading: Luxury Lashes by Corwink Cosmetics
+    subtitle: "#corwinkcrew"
+    body:
+      "If you **LOVE** our lashes and can’t wait to show the world, we would love
+      to collab with you! Here’s how to start: \n\n1\\. Tag @corwinkcosmetics and
+      #corwinkcrew in your Instagram posts \n\n2\\. Send us a DM!"
+header:
+  header_text: Luxury at an affordable price!

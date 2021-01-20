@@ -1,0 +1,26 @@
+<div class="product-sidebar">
+  <h5 class="uk-text-bold">Lash Type</h5>
+<ul class="uk-nav">
+  {{ range $lashType, $taxonomy := index .Site.Taxonomies "lash-types" }}
+    <li><a href="/lash-types{{ $lashType | urlize | relURL }}">{{ $lashType | humanize }}</a></li>
+  {{end}}
+</ul>
+<h5 class="uk-text-bold">Collections</h5>
+<ul class="uk-nav">
+  {{ range $collection, $taxonomy := .Site.Taxonomies.collections }}
+    <li><a href="/collections{{ $collection | urlize | relURL }}">{{ $collection | humanize }}</a></li>
+  {{end}}
+</ul>
+<h5 class="uk-text-bold">Lash Materials</h5>
+<ul class="uk-nav">
+  {{ range $lashMaterial, $taxonomy := index .Site.Taxonomies "lash-materials" }}
+    <li><a href="/lash-materials{{ $lashMaterial | urlize | relURL }}">{{ $lashMaterial | humanize }}</a></li>
+  {{end}}
+</ul>
+<h5 class="uk-text-bold">Eyeliners</h5>
+<ul class="uk-nav">
+  {{ range $eyeliner, $taxonomy := .Site.Taxonomies.eyeliners }}
+    <li><a href="/eyeliners{{ $eyeliner | urlize | relURL }}">{{ $eyeliner | humanize }}</a></li>
+  {{end}}
+</ul>
+</div>

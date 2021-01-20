@@ -1,0 +1,13 @@
+<div class="uk-section">
+    <div class="uk-container uk-container-large">
+        <h2 class="uk-text-lead uk-text-bold">Featured Products</h2>
+
+        <div class="uk-grid-small uk-child-width-1-4@s uk-flex-center uk-grid-medium" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 100">
+            {{ range first 16 (where .Site.RegularPages "Type" "products") }}
+                <a href="{{ .Permalink }}">
+                    {{ partial "templates/product-grid" . }}
+                </a>
+        {{ end }}
+        </div>
+    </div>
+</div>

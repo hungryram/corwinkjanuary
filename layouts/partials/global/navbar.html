@@ -1,0 +1,118 @@
+{{ if not $.IsHome }}
+<div class="top-bar">
+  <div class="uk-container uk-container-large">
+    <p class="uk-light uk-margin-remove">Luxury at an affordable price</p>
+  </div>
+</div>
+{{ end }}
+<div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky sticky-background; cls-inactive: uk-dark uk-navbar-transparent; top: 400;">
+<div class="{{ if $.IsHome }}uk-position-top{{ end }} uk-container uk-container-large uk-visible@l uk-navbar-container">
+    <nav class="uk-margin" uk-navbar>
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="/">
+            <img src="{{ .Site.Data.design.logo_and_title.logo }}" alt="CorWink Cosmetics" width="150">
+        </a>
+      </div>
+      <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+              <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+              <li>
+                <a href="#">Shop
+                  <span class="uk-icon" uk-icon="icon: triangle-down"></span>
+
+                </a>
+                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-3">
+                    <div class="uk-navbar-dropdown-grid uk-child-width-1-3" uk-grid>
+                        <div>
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                              <li><a href="/products">Shop All Products</a></li>
+                                <li class="uk-nav-header accent uk-text-bold">Lash Type</li>
+                                <li><a href="#">Magnetic Lash</a></li>
+                                <li><a href="#">Strip Lash</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-nav-header accent uk-text-bold">Eyeliners</li>
+                                <li><a href="#">Lash Liner</a></li>
+                                <li><a href="#">Magic Liner</a></li>
+                                <li><a href="#">Magnetic Liner</a></li>
+                                <li><a href="#">Uv Neon Pastel Liners</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-nav-header accent uk-text-bold">Collections</li>
+                                <li><a href="#">CorWink Classics</a></li>
+                                <li><a href="#">Fairywink Collection</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>              
+            <li><a href="/shop-the-gallery">Shop the Gallery</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="#" class="snipcart-customer-signin">My Account</a></li>
+          </ul>
+          <div class="uk-navbar-item">
+            <form action="{{ "search" | absURL }}" class="search">
+              <div class="uk-inline">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: search"></span>
+                <input id="search-query" name="s" class="uk-input uk-form-width-medium" type="text" placeholder="Search">
+              </div>
+          </form>
+          </div>
+          <div class="uk-navbar-item">
+            <a href="#" class="cart-button snipcart-checkout">
+              <span href="#" uk-icon="icon: cart" class="uk-margin-small-right"></span>
+              <span class="uk-text-middle snipcart-items-count snipcart-checkout"></span>
+            </a>
+          </div>
+      </div>
+    </nav>
+  </div>
+  <div {{ if not $.IsHome }}style="border-bottom: 1px solid #f3f3f3;"{{ end }}></div>
+</div>
+
+  <div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; top: 400">
+  <nav class="uk-navbar uk-navbar-container uk-hidden@l uk-padding-small uk-box-shadow-small">
+    <div class="uk-navbar-left">
+        <a href="#" class="snipcart-customer-signin uk-margin-small-right"><span uk-icon="user"></span></a>
+        <a href="#" class="snipcart-checkout"><span uk-icon="cart"></span></a>
+    </div>
+    <div class="uk-navbar-center">
+        <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Data.design.logo_and_title.logo }}" alt="CorWink Cosmetics" width="150">
+        </a>
+    </div>
+    <div class="uk-navbar-right">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#mobile-menu-slide" uk-toggle></a>
+    </div>
+  </nav>
+  </div>
+  <div id="mobile-menu-slide" uk-offcanvas>
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-default uk-nav-center">
+          <img src="{{ .Site.Data.design.logo_and_title.logo }}" alt="CorWink Cosmetics" width="100">
+            <li class="uk-nav-header accent">Browse The Site</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li class="uk-nav-divider"></li>
+            <li class="uk-nav-header accent">Shop Collections</li>
+            {{ range $col, $taxonomy := .Site.Taxonomies.collections }}
+            <li>
+              <a href="/collections{{ $col | urlize | relURL }}">{{ $col | humanize }}</a>
+            </li>
+            {{ end }}
+            <li class="uk-nav-divider"></li>
+            <li class="uk-nav-header accent">Policies</li>
+            {{ range where $.Site.Pages.ByWeight "Type" "legal" }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+  </div>
