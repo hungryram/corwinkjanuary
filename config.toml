@@ -1,6 +1,6 @@
 # SETUP
 DefaultContentLanguage = "en"
-baseurl = "https://www.peachepop.com/"
+baseurl = "https://corwinkjanuary.netlify.app/"
 publishdir = "public"
 #canonifyUrls = "true"
 summaryLength = 15
