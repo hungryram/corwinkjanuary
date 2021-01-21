@@ -37,3 +37,5 @@ fields:
     max: 
     labelField: 
   label: Gallery
+pages:
+- content/shop-the-gallery/_index.md
