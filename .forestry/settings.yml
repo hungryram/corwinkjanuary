@@ -30,7 +30,7 @@ sections:
   path: content/faq/_index.md
   label: FAQ
 - type: directory
-  path: content/shop
+  path: content/products
   label: Products
   create: documents
   match: "**/*"
