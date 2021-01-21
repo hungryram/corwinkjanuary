@@ -54,9 +54,3 @@ fields:
     min: 
     max: 
   label: Variants
-pages:
-- content/shop/calming.md
-- content/shop/coco-butter.md
-- content/shop/coco-lotion.md
-- content/shop/green-pack.md
-- content/shop/green-tea.md

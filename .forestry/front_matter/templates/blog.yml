@@ -34,7 +34,3 @@ fields:
   type: tag_list
   default: []
   label: Tags
-pages:
-- content/blog/best-products.md
-- content/blog/cleansing-scrub.md
-- content/blog/rough-scrub.md
