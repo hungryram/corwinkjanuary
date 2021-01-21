@@ -16,6 +16,11 @@ sections:
   path: data/appearance.yml
   label: Appearance
 - type: directory
+  path: content/shop-the-gallery
+  label: Gallery
+  create: documents
+  match: "**/*"
+- type: directory
   path: content
   label: Pages
   create: all
