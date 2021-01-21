@@ -12,7 +12,6 @@ sections:
 - type: document
   path: content/shop-the-gallery/_index.md
   label: Gallery
-  match: "**/*"
 - type: document
   path: data/homelayout.yml
   label: Home Layout
