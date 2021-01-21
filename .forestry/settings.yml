@@ -10,16 +10,15 @@ sections:
 - type: heading
   label: Website
 - type: document
+  path: content/shop-the-gallery/_index.md
+  label: Gallery
+  match: "**/*"
+- type: document
   path: data/homelayout.yml
   label: Home Layout
 - type: document
   path: data/appearance.yml
   label: Appearance
-- type: directory
-  path: content/shop-the-gallery
-  label: Gallery
-  create: documents
-  match: "**/*"
 - type: directory
   path: content
   label: Pages
