@@ -16,10 +16,6 @@ body a:hover {
   color: unset;
 }
 
-body {
-  overflow: hidden;
-}
-
 ul.uk-navbar-dropdown-nav > li > a:focus,
 ul.uk-navbar-dropdown-nav > li > a:hover {
   color: #ac94e8;
@@ -440,6 +436,13 @@ div.product-sidebar li a:hover {
   transition: 0.3s;
   color: #ac94e8;
   padding-left: 5px;
+}
+
+/* GALLERY */
+
+ul.uk-subnav-pill > .uk-active > a {
+  background-color: #ac94e8;
+  color: #fff;
 }
 
 /* FOOTER */
