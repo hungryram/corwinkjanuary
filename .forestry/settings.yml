@@ -47,7 +47,7 @@ sections:
   templates:
   - blog
   - title-and-body
-upload_dir: pricilla-dettmer/peach-pop
+upload_dir: corinne-renteria/corwinkcosmetics
 public_path: https://res.cloudinary.com/hungryram19/image/upload
 front_matter_path: ''
 use_front_matter_path: 
