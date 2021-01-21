@@ -16,6 +16,10 @@ body a:hover {
   color: unset;
 }
 
+body {
+  overflow: hidden;
+}
+
 ul.uk-navbar-dropdown-nav > li > a:focus,
 ul.uk-navbar-dropdown-nav > li > a:hover {
   color: #ac94e8;
@@ -156,8 +160,8 @@ a.cart-button {
   padding: 6px 8px;
 }
 
-.sticky-background {
-  background-color: #ffffff !important;
+nav.uk-padding-small {
+  padding: 10px;
 }
 
 /* HERO */
@@ -211,7 +215,7 @@ a.hero-btn {
   div.uk-background-cover .uk-width-3-5 {
     text-align: center;
     position: absolute;
-    bottom: 5%;
+    bottom: 2%;
   }
 
   h1.hero-head {

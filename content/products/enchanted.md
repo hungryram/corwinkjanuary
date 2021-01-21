@@ -6,7 +6,7 @@ gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1609121737/cori
 lash-materials = ["Real Siberian Mink"]
 lash-types = ["Magnetic Lashes"]
 on_sale = false
-out_of_stock = true
+out_of_stock = false
 price = 14.99
 sale_price = 14.24
 sku = "019"
@@ -25,8 +25,7 @@ meta_description = "Our Enchanted Magnetic Lash is made from 100% Real Siberian 
 title_tag = "Enchanted Magnetic Lash | Magnetic Lash | CorWink Cosmetics"
 
 +++
-
-- Magnetic Liner **NOT** Included
+* Magnetic Liner **NOT** Included
 
 Take a look at our **Enchanted** lash... Don't you feel the MAGIC! 💫
 
