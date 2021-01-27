@@ -445,6 +445,17 @@ ul.uk-subnav-pill > .uk-active > a {
   color: #fff;
 }
 
+span.uk-badge.gallery-badge {
+  position: relative;
+  float: left;
+  margin: 5px;
+  padding: 12px;
+}
+
+span.uk-badge.gallery-badge a {
+  color: #fff;
+}
+
 /* FOOTER */
 
 footer {
