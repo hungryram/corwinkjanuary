@@ -20,16 +20,24 @@ fields:
     config:
       maxSize: 64
     label: Photo
-  - name: products
-    type: list
+  - name: product_list
+    type: field_group_list
+    fields:
+    - name: product_name
+      type: text
+      config:
+        required: false
+      label: Product Name
+    - name: product_link
+      type: text
+      config:
+        required: false
+      label: Product Link
     config:
-      use_select: true
       min: 
       max: 
-      source:
-        type: pages
-        section: products
-    label: Products
+      labelField: 
+    label: Product List
   config:
     min: 
     max: 
