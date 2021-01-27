@@ -1,4 +1,5 @@
 +++
+product_name = ["Unique", "Baddie", "Virtue", "UV Neon Liner"]
 title = "Shop the Gallery"
 [[gallery]]
 heading = "Unique"
