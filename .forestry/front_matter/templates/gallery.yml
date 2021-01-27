@@ -7,6 +7,11 @@ fields:
   config:
     required: false
   label: Title
+- name: product_name
+  type: tag_list
+  default: []
+  label: Product Name
+  description: Add the name of the product to display on the menu for organizing
 - name: gallery
   type: field_group_list
   fields:
