@@ -1,5 +1,5 @@
 +++
-product_name = ["Unique", "Baddie", "Virtue", "UV Neon Liner", "Magic Liner Pen"]
+product_name = ["Unique", "Baddie", "Virtue", "UV Neon Liner", "Pixie"]
 title = "Shop the Gallery"
 [[gallery]]
 heading = "Pixie"
