@@ -2,6 +2,24 @@
 product_name = ["Unique", "Baddie", "Virtue", "UV Neon Liner", "Magic Liner Pen"]
 title = "Shop the Gallery"
 [[gallery]]
+heading = "Pixie"
+photo = "https://res.cloudinary.com/hungryram19/image/upload/v1611994018/corinne-renteria/corwinkcosmetics/IMG_3083_pgoowk.jpg"
+[[gallery.product_list]]
+product_link = "/products/pixie/"
+product_name = "Pixie"
+[[gallery]]
+heading = "Pixie"
+photo = "https://res.cloudinary.com/hungryram19/image/upload/v1611994001/corinne-renteria/corwinkcosmetics/IMG_3086_nqkj1p.jpg"
+[[gallery.product_list]]
+product_link = "/products/pixie/"
+product_name = "Pixie"
+[[gallery]]
+heading = "Pixie"
+photo = "https://res.cloudinary.com/hungryram19/image/upload/v1611993952/corinne-renteria/corwinkcosmetics/IMG_3095_sypomr.jpg"
+[[gallery.product_list]]
+product_link = "/products/pixie/"
+product_name = "Pixie"
+[[gallery]]
 heading = "Unique"
 photo = "https://res.cloudinary.com/hungryram19/image/upload/v1611214548/corinne-renteria/corwinkcosmetics/20210120_115213_sjpsuq.jpg"
 product = "products/unique.md"
