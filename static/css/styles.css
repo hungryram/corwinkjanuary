@@ -16,6 +16,7 @@ body a:hover {
   color: unset;
 }
 
+
 ul.uk-navbar-dropdown-nav > li > a:focus,
 ul.uk-navbar-dropdown-nav > li > a:hover {
   color: #ac94e8;
@@ -228,6 +229,12 @@ div.uk-background-cover {
   background-size: cover;
   background-position: center;
 }
+
+@media screen and (max-width: 768px) {
+  section.hero.is-fullheight {
+    background: url("/uploads/mobilebanner8.jpg");
+    background-size: cover;
+  }
 
 /* REVIEWS */
 
